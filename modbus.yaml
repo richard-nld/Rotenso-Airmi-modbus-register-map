@@ -1,0 +1,48 @@
+- name: rotenso_airmi
+  type: tcp
+  host: 192.168.x.x
+  port: 502
+  delay: 2
+  timeout: 5
+
+  # Sensoren (Uitlezen van waarden)
+  sensors:
+    - name: "Room temp"
+      slave: 251
+      address: 40
+      input_type: input
+      unique_id: Room temp
+      unit_of_measurement: °C
+      device_class: temperature
+      scale: 0.1
+      precision: 1
+
+    - name: "Ambient temp"
+      slave: 251
+      address: 50
+      input_type: input
+      unique_id: Ambient temp
+      unit_of_measurement: °C
+      device_class: temperature
+      scale: 0.1
+      precision: 1
+
+    - name: "Out water temp"
+      slave: 251
+      address: 43
+      input_type: input
+      unique_id: Out water temp
+      unit_of_measurement: °C
+      device_class: temperature
+      scale: 0.1
+      precision: 1
+
+    - name: "In water temp"
+      slave: 251
+      address: 42
+      input_type: input
+      unique_id: In water temp
+      unit_of_measurement: °C
+      device_class: temperature
+      scale: 0.1
+      precision: 1
