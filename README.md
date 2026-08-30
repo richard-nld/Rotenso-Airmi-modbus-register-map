@@ -5,40 +5,45 @@
 $~$
 
 
-Please note that modbus 0-based offset is used so you have to extract 1 of the id. Please see attached modbus.yaml example for Home Assistant.
+Please see attached modbus.yaml example file for Home Assistant.
 
 $~$
 
 
-| Register | map | 
+| Register | Map | 
 |:--------:|--------|
-| `41` | Room temp |
+| `0` | |
+| `40` | Room temp |
 | | |
-| `43` | In water temp TA |
-| `44` | Out water temp TB |
+| `42` | In water temp TA |
+| `43` | Out water temp TB |
 | | |
-| `47` | Tank temp |
+| `46` | Tank temp |
 | | |
-| `50` | Coil temp T3 ? |
+| `49` | Coil temp T3 ? |
 | | |
-| `51` | Ambient temp T4 |
-| `52` | Liquid temp T5 |
-| `53` | Suction temp TH |
-| `54` | Discharge temp TP | 
+| `50` | Ambient temp T4 |
+| `51` | Liquid temp T5 |
+| `52` | Suction temp TH |
+| `53` | Discharge temp TP | 
 | | |
-| `#57` | Out water temp TB ? |
+| `#56` | Out water temp TB ? |
 | | |
-| `62` | Out water pre |
+| `61` | Out water pre |
+| `62` |  I-pump output |
 | | |
-| `67` | C-A curve temp |
-| `68` | H-A curve temp |
-| `69` | C-B curve temp |
-| `70` | H-B curve temp |
-| `71` | EEV-1 open |
-| `72` | EEV-2 open |
+| `66` | C-A curve temp |
+| `67` | H-A curve temp |
+| `68` | C-B curve temp |
+| `69` | H-B curve temp |
+| `70` | EEV-1 open |
+| `71` | EEV-2 open |
 | | |
-| `75` | Input voltage |
+| `74` | Input voltage |
+| `75` | AC current |
+| `76` | Bus voltage |
+| `77` | Comp. current |
 | | |
-| `77` | Bus voltage |
+| `80` | On=1/Off=0 |
 | | |
-| `88` | Suc. pressure |
+| `87` | Suc. pressure |
