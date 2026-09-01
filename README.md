@@ -20,14 +20,12 @@ $~$
 | | ||
 | `46` | Tank temp | Temperature measured by the DHW tank temperature sensor. This is the actual tank temperature reported to the heat pump—not the DHW setpoint |
 | | ||
-| `49` | Coil temp T3 ? | Outdoor heat-exchanger coil temperature |
+| `49` | Coil temp T3 | Outdoor heat-exchanger coil temperature |
 | | ||
 | `50` | Ambient temp T4 | Outdoor/ambient air temperature measured by sensor T4 |
 | `51` | Liquid temp T5 | Refrigerant liquid-line temperature measured by T5 |
-| `52` | Suction temp TH | Refrigerant suction temperature entering the compressor |
-| `53` | Discharge temp TP | 
-| | ||
-| `#56` | Out water temp TB ? ||
+| `52` | Discharge temp TP | Refrigerant/gas temperature at compressor discharge |
+| `53` | Suction temp TH | Refrigerant suction temperature entering the compressor |
 | | ||
 | `61` | Out water pre | Water pressure on the outlet side, bar |
 | `62` |  I-pump output | Inverter/internal circulation-pump output, % |
@@ -46,7 +44,8 @@ $~$
 | `75` | AC current | Current drawn from the AC supply by the unit, A |
 | `76` | Bus voltage | DC inverter-bus voltage, VDC |
 | `77` | Comp. current | Current being supplied to the compressor/inverter compressor circuit |
+| `78` | Comp. frequency | Actual compressor inverter frequency, in Hz |
 | | ||
-| `80` | On=1/Off=0 |
+| `80` | PWM pump | PWM-controlled water-pump status/control signal |
 | | ||
 | `87` | Suc. pressure |
