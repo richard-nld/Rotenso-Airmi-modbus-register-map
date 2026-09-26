@@ -8,6 +8,7 @@ $~$
 Please see attached modbus.yaml example file for Home Assistant.
 
 $~$
+## Read Input Registers (0x04)
 
 | Register | Map | Description |
 |:--------:|--------|----------|
@@ -49,6 +50,22 @@ $~$
 | `80` | PWM pump | PWM-controlled water-pump status/control signal |
 | | ||
 | `87` | Suc. pressure |
+
+<br/><br/>
+<br/><br/>
+## Read Holding Registers (0x03)
+| Register | Map | Description |
+|:--------:|--------|----------|
+| `2100` | Operation Mode Set | 1 = cool, 2 = heat, 4 = auto |
+| `2101` | Heatpump mode on/off | on = 1, off = 0 |
+| `2102` | DHW mode on/off | on = 1, off = 0 |
+| | ||
+| `2103` | Optional Set | 4 = holiday, 16 = silent mode |
+| | ||
+| `2105` | Target DWH temp |  |
+| | ||
+| `2114` | Target room temp | |
+
 
 
 
